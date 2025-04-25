@@ -28,9 +28,9 @@ try:
     font35 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 35)
 
     logging.info("read bmp file")
-    Himage = Image.open(os.path.join(picdir, '1234.bmp'))
+    Himage = Image.open(os.path.join(picdir, 'test2.bmp'))
     epd.display(epd.getbuffer(Himage))
-    time.sleep(2)
+    time.sleep(20)
 
     logging.info("read bmp file on window")
     Himage2 = Image.new('1', (epd.width, epd.height), 255)  # 255: clear the frame
