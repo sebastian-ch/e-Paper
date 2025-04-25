@@ -28,7 +28,7 @@ try:
     font35 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 35)
 
     logging.info("read bmp file")
-    Himage = Image.open(os.path.join(picdir, '7in5_V2.bmp'))
+    Himage = Image.open(os.path.join(picdir, '1234.bmp'))
     epd.display(epd.getbuffer(Himage))
     time.sleep(2)
 
